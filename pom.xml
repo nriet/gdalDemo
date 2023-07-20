@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.nriet.gdal</groupId>
+    <artifactId>gdalDemo</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <name>gdalDemo</name>
+    <packaging>jar</packaging>
+
+    <properties>
+        <maven.compiler.target>1.8</maven.compiler.target>
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <junit.version>5.7.1</junit.version>
+    </properties>
+
+    <dependencies>
+		 <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>4.12</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.gdal</groupId>
+            <artifactId>gdal</artifactId>
+            <version>3.6.0</version>
+        </dependency>
+    </dependencies>
+
+    <repositories>
+        <repository>
+            <id>rdc-releases</id>
+            <url>https://packages.aliyun.com/maven/repository/2104959-release-wthfmY/</url>
+        </repository>
+        <repository>
+            <id>rdc-snapshots</id>
+            <url>https://packages.aliyun.com/maven/repository/2104959-snapshot-lmbfWL/</url>
+        </repository>
+    </repositories>
+    <pluginRepositories>
+        <pluginRepository>
+            <id>rdc-releases</id>
+            <url>https://packages.aliyun.com/maven/repository/2104959-release-wthfmY/</url>
+        </pluginRepository>
+        <pluginRepository>
+            <id>rdc-snapshots</id>
+            <url>https://packages.aliyun.com/maven/repository/2104959-snapshot-lmbfWL/</url>
+        </pluginRepository>
+    </pluginRepositories>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-war-plugin</artifactId>
+                <version>3.3.1</version>
+            </plugin>
+        </plugins>
+    </build>
+</project>
